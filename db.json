@@ -1,0 +1,90 @@
+{
+  "arr": [
+    {
+      "id": 1,
+      "quantity": 1,
+      "price": 100,
+      "img": "../assets/images/a.jpg",
+      "tittle": "item_1"
+    },
+    {
+      "id": 2,
+      "quantity": 1,
+      "price": 101,
+      "img": "../assets/images/b.jpeg",
+      "tittle": "item_2"
+    },
+    {
+      "id": 3,
+      "quantity": 1,
+      "price": 102,
+      "img": "../assets/images/c.jpeg",
+      "tittle": "item_3"
+    },
+    {
+      "id": 4,
+      "quantity": 1,
+      "price": 103,
+      "img": "../assets/images/e.jpg",
+      "tittle": "item_4"
+    },
+    {
+      "id": 5,
+      "quantity": 1,
+      "price": 104,
+      "img": "../assets/images/f.webp",
+      "tittle": "item_5"
+    },
+    {
+      "id": 6,
+      "quantity": 1,
+      "price": 104,
+      "img": "../assets/images/f.webp",
+      "tittle": "item_5"
+    },
+    {
+      "id": 7,
+      "quantity": 1,
+      "price": 104,
+      "img": "../assets/images/f.webp",
+      "tittle": "item_5"
+    },
+    {
+      "id": 8,
+      "quantity": 1,
+      "price": 104,
+      "img": "../assets/images/f.webp",
+      "tittle": "item_5"
+    },
+    {
+      "id": 9,
+      "quantity": 1,
+      "price": 104,
+      "img": "../assets/images/f.webp",
+      "tittle": "item_5"
+    }
+  ],
+  "register": [
+    {
+      "id": 1,
+      "name": "param",
+      "mobile": 9685744152,
+      "email": "param@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "r",
+      "email": "r@gmail.com",
+      "mobile": "9968547458",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "name": "MOHIT",
+      "email": "m@gmail.com",
+      "mobile": "7896547858",
+      "password": "123456"
+    }
+  ]
+}
