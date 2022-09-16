@@ -85,6 +85,20 @@
       "email": "m@gmail.com",
       "mobile": "7896547858",
       "password": "123456"
+    },
+    {
+      "id": 4,
+      "name": "vikas",
+      "email": "v@gmail.com",
+      "mobile": "7879398439",
+      "password": "123456"
+    },
+    {
+      "id": 5,
+      "name": "dadu",
+      "email": "d@gmail.com",
+      "mobile": "9968547458",
+      "password": "123456"
     }
   ]
 }

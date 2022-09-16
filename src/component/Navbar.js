@@ -8,26 +8,27 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 
 function MyNavbar() {
-  let navigate = useNavigate();
-  const [reflectNav, setreflectNav] = useState(true);
-  const storage_data = JSON.parse(localStorage.getItem("user")); //GET LOCAL_STORAGE
-  console.log("LOGIN_USER_DETAIL_SESSION", storage_data);
-  let cartlength = useSelector((state) => state.Reducer.myCartdata); //GET REDUCERDATA
+  //LOCAL STORAGE DATA->
+  const storage_data = JSON.parse(localStorage.getItem("user"));
+  console.log("_storrage_Data", storage_data);
 
+  let navigate = useNavigate();
+
+  //REDUCER USER LOGIN DATA->
+  let login_reducer_data = useSelector((state) => state.Reducer?.login_user);
+  console.log("logooo", login_reducer_data);
+
+  let cartlength = useSelector((state) => state.Reducer.myCartdata); //GET REDUCERDATA
+  useEffect(() => {
+    console.log("first call uaedgg");
+  }, [login_reducer_data]);
   //LOGOUT FUNCTION
   const myLogout_func = () => {
     localStorage.removeItem("user");
+    // window.location.href = "/";
     navigate("/");
     cartlength.length = 0;
   };
-  //REFELECT NAVBAR
-  useEffect(() => {
-    if (reflectNav) {
-      setreflectNav(false);
-    } else {
-      setreflectNav(true);
-    }
-  }, []);
 
   return (
     <>
@@ -57,6 +58,13 @@ function MyNavbar() {
                 LOGIN
               </Nav.Link>
             )}
+            {/* {login_reducer ? (
+              <Nav.Link onClick={myLogout_func}>LOGOUT</Nav.Link>
+            ) : (
+              <Nav.Link as={Link} to="/login">
+                LOGIN
+              </Nav.Link>
+            )} */}
           </Nav>
         </Container>
         <Link to="/cartList">

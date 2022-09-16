@@ -8,6 +8,7 @@ const initialData = {
   error: [],
 };
 const Reducer = (state = initialData, action) => {
+  const storage_data = JSON.parse(localStorage.getItem("user"));
   console.log("Reducer call", action.payload);
   switch (action.type) {
     case "GET_DATA":
@@ -40,6 +41,7 @@ const Reducer = (state = initialData, action) => {
 
     case "LOGIN_USER_SESSION":
       const userLogin = [...state.login_user]; //create copy of array on copyDt
+
       userLogin.push(action.payload);
       return {
         ...state,
